@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    cursor: default;
+    display: flex;
+    font: 15px/1.3333 'Segoe UI', 'Open Sans', sans-serif;
+    margin: 0;
+}
+.left-pane {
+    background-color: #333;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 150px;
+    transition: width 300ms;
+}
+.left-pane.expanded {
+    width: 600px;
+}
+.main-pane {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+section {
+    border: 2px solid blue;
+    flex: 1;
+    font-size: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#b, #c {
+    display: none;
+}
+.main-pane[min-width~="600px"] #b {
+    display: flex;
+}
+.main-pane[min-width~="1000px"] #c {
+    display: flex;
+}
