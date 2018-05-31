@@ -18,7 +18,7 @@ main() {
 
   document.querySelector('.left-pane')
     ..onClick.listen((e) {
-      e.target.classes.toggle('expanded');
+      (e.target as Element).classes.toggle('expanded');
     })
     ..onTransitionEnd.listen((_) {
       eq.update();

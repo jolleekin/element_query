@@ -1,6 +1,6 @@
 name: element_query
-description: A polyfill for Element Query.
-version: 0.0.1
+description: A polyfill for Element Query
+version: 0.0.2
 author: Man Hoang <jolleekin@outlook.com>
 homepage: https://github.com/jolleekin/element_query
 
